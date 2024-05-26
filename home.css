@@ -40,14 +40,14 @@ button:hover{
 }
 
 h1{
-color:white;
+color: aliceblue;
 position: fixed;
 left:-900px;
 top:200px ;
 font-style: oblique;
 text-transform: uppercase;
 font-size: 80px;
--webkit-text-stroke-color: #fff;
+-webkit-text-stroke-color:(90deg,#00dbde,#fc00ff);
 -webkit-text-stroke-width: 1px;
 -webkit-text-fill-color: transparent;
 cursor: pointer;
@@ -68,9 +68,9 @@ animation: up 1s 2s linear forwards;
     transform: translatex(1480px)rotate(360deg);
     opacity: 1;
 }
-a{
+ a{
+  color: aliceblue;
   text-decoration: none;
-  color: #fff;
   
 }
 }
