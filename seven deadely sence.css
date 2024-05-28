@@ -51,8 +51,8 @@ body{
   position: absolute;
   top:0;
   left: 0;
-  width: 400px;
-  height: 400px;
+  width: 100px;
+  height: 100px;
   background:#0f0;
   transform: translate(-50%,-50%);
   animation: cursor-animation 4s linear infinite;
