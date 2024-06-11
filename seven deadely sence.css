@@ -2,20 +2,16 @@
 margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
-  } 
-body{
+}body{
   min-height: 100vh;
   background: black;
   overflow:hidden;
-  
-}
-  .container{
+} .container{
     position: relative;
     height: 100vh;
     overflow:hidden;
     z-index: 2;
-  }
+}
 .row{
   display:inline-flex;
   margin-top: -32px;
@@ -23,10 +19,7 @@ body{
 }
 .row:nth-child(even){
   margin-left: 2px;
-  
-}
-
-.hexagon{
+}.hexagon{
  position: relative;
   width:100px;
   height:110px;
@@ -34,20 +27,14 @@ body{
   transition: 2s;
   background-color: #111;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 51% 100%, 0 75%, 0 25%);
-
-}
-.hexagon::before{
-  
+}.hexagon::before{
   position: absolute;
   top: 0;
   height:100%;
   width: 50%;
   pointer-events: none;
-  
-  z-index:1000;
-
-}
-#light{
+  z-index:10;
+}#light{
   position: absolute;
   top:0;
   left: 0;
@@ -64,9 +51,100 @@ body{
   }
   100%{
     filter: hue-rotate(360deg)blur(50px)
-
-    }
   }
+  }
+  .heading{
+    position:absolute;
+    padding: 40px;
+    font-size: 50px;
+    background-image: url(headingimage.jpg);
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index:1;
+    left: 20vmax;
+   
+ }
+ .info{
+  position:absolute;
+  background-color:rgba(255,255,255,.1);
+  border:2px solid rgba(255,255,255,.2);
+  backdrop-filter: blur(2px);
+  z-index: 1;
+  width: 60vmax;
+  height:22vmax;
+  top:9vmax;
+  left:6vmax;
+  border-radius: 10px;
+  cursor: pointer;
+ 
+  }
+  .info h1{
+    position: relative;
+    font-size:2vmax;
+    left:2%;
+    top: 2%;
+  }
+  .infoall{
+    position:relative;
+    display: flex;
+    padding: 1%;
+  }
+  .info1{
+  position: relative;
+  color: aliceblue;  
+  font-style: italic;
+  left: 2%;
+  }
+  .info1 h5{
+    padding: 2%;
+  }
+  .info2 h5{
+    padding: 2%;
+  }
+  .info2{
+    color: aliceblue;  
+    font-style: italic;
+    position: relative;
+    left: 35%;
+  }
+  .image img{
+    top: 8vmax;
+    position:absolute;
+    width: 20.9vmax;
+    height:24vmax;
+    z-index: 2;
+    transform: 0.5s;
+    background-color:transparent;
+   border-radius:2.5vmax;
+   -webkit-box-reflect: below 2px linear-gradient(transparent,transparent,#0004);
+   box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+  .image:hover img{
+    opacity: 0.1;
+    transform:translate3d(0%,-50px,100px);
+  }
+  .pi{
+  top: 8vmax;
+  left: 2vmax;
+  width: 18.8vmax;
+  height: 22vmax;
+  z-index:1;
+  position:absolute;
+  transition: 0.5s;
+   }
+  .pipi:hover .pi{
+    opacity: 1;
+    transform: translate3d(-5%,8%,670px)
+  }
+  .pipi{
+   position: relative;
+   left: 75vmax;
+   top:1vmax;
+  
+  }
+  
+
 
 
 
